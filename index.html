@@ -36,29 +36,29 @@
 <body class="theme-light">
   <header class="site-header">
     <a class="brand brand-logo" href="index.html" aria-label="Film Stretch Líder">
-      <img src="assets/logo-filmstretchlider.png" alt="Film Stretch Líder">
+      <img loading="lazy" src="assets/logo-filmstretchlider.png" alt="Film Stretch Líder">
     </a>
     <nav class="main-nav" aria-label="Navegación">
       <a href="film-stretch/">Film Stretch</a>
       <a href="cintas-adhesivas/">Cintas adhesivas</a>
       <a href="papeleria-comercial/">Papelería</a>
       <a href="impresoras-toners/">Impresoras</a>
-      <a href="kits-revendedores/">¿Querés revender?</a>
-      <a href="combos-empresas/">Combos</a>
+      <a href="kits-revendedores/">¿Querés revender?</a><a href="combos-empresas/">Combos</a>
+      <a href="sucursales/">Sucursales</a>
     </nav>
     <div class="theme-switcher" aria-label="Cambiar tema">
       <span>Color de fondo</span>
       <button type="button" data-theme="theme-light">Claro</button>
       <button type="button" data-theme="theme-gray">Gris</button>
     </div>
-    <a class="button button-header" href="#sucursales">Sucursales</a>
+    <a class="button button-header js-open-whatsapp" href="#" data-product="cotización general">Cotizar</a>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <h1>Insumos para negocios</h1>
         <p class="kicker">Venta por unidad, caja o volumen</p>
+        <h1>Insumos para negocios</h1>
         <p class="hero-text">Film stretch, film estirable, cinta de embalar, resmas, rollos térmicos, etiquetas, impresoras y tóners para comercios, oficinas, depósitos, supermercados y distribuidoras.</p>
         <div class="hero-actions">
           <a class="button js-open-whatsapp" href="#" data-product="cotización general">Pedir cotización por WhatsApp</a>
@@ -75,13 +75,14 @@
 
       <div class="hero-side">
         <div class="hero-visual">
-          <img src="assets/hero-collage.png" alt="Collage de film stretch e insumos en stock">
+          <img src="assets/hero-collage.webp" alt="Collage de film stretch e insumos en stock">
           <div class="hero-label">
             <strong>Film stretch transparente y negro</strong>
             <span>Producto principal de rotación</span>
           </div>
         </div>
-        <div class="hero-extra-box hero-extra-textonly">
+        <div class="hero-extra-box hero-extra-rollos">
+          <img loading="lazy" src="assets/rollos-dos-premium.webp" alt="Dos rollos de film stretch, uno transparente y uno negro">
           <div>
             <strong>Stretch a medida según la necesidad del cliente</strong>
             <p>En algunos casos también se recuperan los rollos para descontarlos. Menos costo. Menos desperdicio.</p>
@@ -94,17 +95,6 @@
       <p>Atención personalizada, mejoramos cualquier presupuesto, estamos para ayudarte.</p>
     </section>
 
-    <section class="section tube-compare-section">
-      <div class="section-title section-title-left">
-        <p class="kicker">Comparativa</p>
-        <h2>¿Por qué conviene mirar el tubo?</h2>
-        <p>En muchos rollos la diferencia no está solo en el film. Un tubo más liviano mejora el rendimiento real por kilo.</p>
-      </div>
-      <div class="tube-compare-card">
-        <img src="assets/comparativa-tubos.png" alt="Comparativa entre rollos con tubo más fino y rollos de la competencia con tubo más grueso">
-      </div>
-    </section>
-
     <section class="section" id="productos">
       <div class="section-title">
         <p class="kicker">Catálogo</p>
@@ -112,8 +102,8 @@
         <p>Rubros principales para cotizar rápido, navegar mejor y posicionar categorías con intención de compra.</p>
       </div>
       <div class="category-grid category-grid-media">
-        <article class="category-card">
-          <img class="category-thumb" src="assets/film-stretch-3rollos.jpg" alt="Film stretch transparente">
+        <article class="category-card main-category">
+          <img loading="lazy" class="category-thumb" src="assets/film-stretch-3rollos.jpg" alt="Film stretch transparente">
           <div class="category-label">Principal</div>
           <h3>Film stretch</h3>
           <p>Film stretch premium transparente y negro, alto rendimiento, medida garantizada y presentaciones para embalaje o paletizado.</p>
@@ -121,7 +111,7 @@
         </article>
 
         <article class="category-card">
-          <img class="category-thumb" src="assets/cinta-embalar.jpg" alt="Cinta de embalar">
+          <img loading="lazy" class="category-thumb" src="assets/cinta-embalar.jpg" alt="Cinta de embalar">
           <div class="category-label">Embalaje</div>
           <h3>Cintas adhesivas</h3>
           <p>Cinta de embalar transparente y marrón, cinta frágil y opciones comerciales para cierre de cajas, despacho y uso intensivo.</p>
@@ -129,7 +119,7 @@
         </article>
 
         <article class="category-card">
-          <img class="category-thumb" src="assets/autor-a4-75g.jpg" alt="Resmas A4">
+          <img loading="lazy" class="category-thumb" src="assets/autor-a4-75g.jpg" alt="Resmas A4">
           <div class="category-label">Papelería</div>
           <h3>Resmas</h3>
           <p>Resmas A4 y oficio, papelería profesional para oficina, administración, comercios y reposición diaria.</p>
@@ -137,7 +127,7 @@
         </article>
 
         <article class="category-card">
-          <img class="category-thumb" src="assets/caja-rollos-termicos.jpg" alt="Rollos térmicos y etiquetas">
+          <img loading="lazy" class="category-thumb" src="assets/etiquetas-pack.jpg" alt="Rollos térmicos y etiquetas">
           <div class="category-label">Comercio</div>
           <h3>Rollos y etiquetas</h3>
           <p>Rollos térmicos y etiquetas autoadhesivas para puntos de venta, logística, facturación y despacho.</p>
@@ -145,7 +135,7 @@
         </article>
 
         <article class="category-card">
-          <img class="category-thumb" src="assets/pantum-p2500w.jpg" alt="Impresora láser">
+          <img loading="lazy" class="category-thumb" src="assets/pantum-p2500w.jpg" alt="Impresora láser">
           <div class="category-label">Impresoras</div>
           <h3>Impresoras</h3>
           <p>Impresoras láser, WiFi y multifunción para papelería, comercios y uso profesional.</p>
@@ -153,7 +143,7 @@
         </article>
 
         <article class="category-card">
-          <img class="category-thumb" src="assets/epson-picturemate-paper.jpg" alt="Tóners e insumos de impresión">
+          <img loading="lazy" class="category-thumb" src="assets/toners-genericos.webp" alt="Tóners e insumos de impresión">
           <div class="category-label">Consumibles</div>
           <h3>Tóners</h3>
           <p>Tóners originales y compatibles. Consultá por marca, modelo exacto y disponibilidad comercial.</p>
@@ -170,35 +160,35 @@
       </div>
       <div class="gallery-grid gallery-grid-compact">
         <article class="gallery-card">
-          <img src="assets/film-stretch-3rollos.jpg" alt="Film stretch transparente">
+          <img loading="lazy" src="assets/film-stretch-3rollos.jpg" alt="Film stretch transparente">
           <div><span class="product-badge">Film stretch</span><h3>Film stretch transparente</h3><p>Alta rotación para embalaje, logística, depósitos y despacho.</p><button class="button button-small js-open-whatsapp" data-product="film stretch transparente">Cotizar</button></div>
         </article>
         <article class="gallery-card">
-          <img src="assets/film-stretch-negro.jpg" alt="Film stretch negro">
+          <img loading="lazy" src="assets/film-stretch-negro.jpg" alt="Film stretch negro">
           <div><span class="product-badge">Film stretch</span><h3>Film stretch negro</h3><p>Protección y ocultamiento de mercadería para usos comerciales.</p><button class="button button-small js-open-whatsapp" data-product="film stretch negro">Cotizar</button></div>
         </article>
         <article class="gallery-card">
-          <img src="assets/cinta-embalar.jpg" alt="Cinta de embalar">
+          <img loading="lazy" src="assets/cinta-embalar.jpg" alt="Cinta de embalar">
           <div><span class="product-badge">Cintas</span><h3>Cinta de embalar</h3><p>Producto comercial para cierre de cajas, embalaje y despacho.</p><button class="button button-small js-open-whatsapp" data-product="cinta de embalar">Cotizar</button></div>
         </article>
         <article class="gallery-card">
-          <img src="assets/rollos-termicos.jpg" alt="Rollos térmicos">
+          <img loading="lazy" src="assets/rollos-termicos.jpg" alt="Rollos térmicos">
           <div><span class="product-badge">Comercio</span><h3>Rollos térmicos</h3><p>Medidas comerciales para puntos de venta y facturación.</p><button class="button button-small js-open-whatsapp" data-product="rollos térmicos">Cotizar</button></div>
         </article>
         <article class="gallery-card">
-          <img src="assets/etiquetas-pack.jpg" alt="Etiquetas autoadhesivas">
+          <img loading="lazy" src="assets/etiquetas-pack.jpg" alt="Etiquetas autoadhesivas">
           <div><span class="product-badge">Etiquetas</span><h3>Etiquetas autoadhesivas</h3><p>Etiquetas en rollo para despacho, logística y rotulado.</p><button class="button button-small js-open-whatsapp" data-product="etiquetas autoadhesivas">Cotizar</button></div>
         </article>
         <article class="gallery-card">
-          <img src="assets/autor-a4-75g.jpg" alt="Resma A4 Autor 75 gramos">
+          <img loading="lazy" src="assets/autor-a4-75g.jpg" alt="Resma A4 Autor 75 gramos">
           <div><span class="product-badge">Resmas</span><h3>Resmas A4</h3><p>Papel multifunción para oficinas, administración y comercios.</p><button class="button button-small js-open-whatsapp" data-product="resmas A4">Cotizar</button></div>
         </article>
         <article class="gallery-card">
-          <img src="assets/pantum-p2500w.jpg" alt="Impresora Pantum P2500W">
+          <img loading="lazy" src="assets/pantum-p2500w.jpg" alt="Impresora Pantum P2500W">
           <div><span class="product-badge">Impresoras</span><h3>Impresora láser WiFi</h3><p>Equipo compacto para oficina, emprendimientos y uso profesional.</p><button class="button button-small js-open-whatsapp" data-product="impresora láser WiFi">Cotizar</button></div>
         </article>
         <article class="gallery-card">
-          <img src="assets/xerox-3020-wifi.jpg" alt="Impresora Xerox 3020 WiFi">
+          <img loading="lazy" src="assets/xerox-3020-wifi.jpg" alt="Impresora Xerox 3020 WiFi">
           <div><span class="product-badge">Impresoras</span><h3>Xerox 3020 WiFi</h3><p>Impresora láser monocromática compacta con conexión inalámbrica.</p><button class="button button-small js-open-whatsapp" data-product="Xerox 3020 WiFi">Cotizar</button></div>
         </article>
       </div>
@@ -228,24 +218,24 @@
         <p>Modelos láser y multifunción para oficina, profesionales y comercios. Consultar stock actualizado.</p>
       </div>
       <div class="printer-grid">
-        <article class="printer-card"><img src="assets/xerox-3020-wifi.jpg" alt="Xerox 3020 WiFi"><h3>Xerox 3020 WiFi</h3><p>Impresora láser monocromática compacta con WiFi Direct y USB.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Xerox 3020 WiFi">Consultar</button></article>
-        <article class="printer-card"><img src="assets/pantum-p2500w.jpg" alt="Pantum P2500W"><h3>Pantum P2500W</h3><p>Impresora láser monocromática eficiente para hogar y oficina.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Pantum P2500W">Consultar</button></article>
-        <article class="printer-card"><img src="assets/brother-hl1200.jpg" alt="Brother HL-1200"><h3>Brother HL-1200</h3><p>Impresora láser compacta, confiable y de excelente diseño.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Brother HL-1200">Consultar</button></article>
-        <article class="printer-card"><img src="assets/brother-hl1212w.jpg" alt="Brother HL-1212W"><h3>Brother HL-1212W</h3><p>Impresora láser monocromática económica, ideal para hogar u oficina.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Brother HL-1212W">Consultar</button></article>
+        <article class="printer-card"><img loading="lazy" src="assets/xerox-3020-wifi.jpg" alt="Xerox 3020 WiFi"><h3>Xerox 3020 WiFi</h3><p>Impresora láser monocromática compacta con WiFi Direct y USB.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Xerox 3020 WiFi">Consultar</button></article>
+        <article class="printer-card"><img loading="lazy" src="assets/pantum-p2500w.jpg" alt="Pantum P2500W"><h3>Pantum P2500W</h3><p>Impresora láser monocromática eficiente para hogar y oficina.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Pantum P2500W">Consultar</button></article>
+        <article class="printer-card"><img loading="lazy" src="assets/brother-hl1200.jpg" alt="Brother HL-1200"><h3>Brother HL-1200</h3><p>Impresora láser compacta, confiable y de excelente diseño.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Brother HL-1200">Consultar</button></article>
+        <article class="printer-card"><img loading="lazy" src="assets/brother-hl1212w.jpg" alt="Brother HL-1212W"><h3>Brother HL-1212W</h3><p>Impresora láser monocromática económica, ideal para hogar u oficina.</p><button class="button button-small js-open-whatsapp" data-product="Impresora Brother HL-1212W">Consultar</button></article>
       </div>
     </section>
 
     <section class="section" id="kits-revendedores">
       <div class="section-title">
-        <p class="kicker">¿Querés revender?</p>
+        <p class="kicker">Revendedores</p>
         <h2>Kits para empezar a revender</h2>
         <p>Surtido a elección con ahorro estimado frente a compra por unidad. Ideal para comercios, emprendedores y revendedores.</p>
       </div>
       <div class="page-grid">
-        <article class="kit-card"><h3>Starter</h3><div class="kit-price">$390.000</div><span class="saving">12% ahorro</span><p>Base liviana con productos de alta rotación y salida rápida, también a elección.</p><button class="button js-open-whatsapp" data-product="Kit Starter para revendedores">Consultar kit</button></article>
-        <article class="kit-card"><h3>Experience</h3><div class="kit-price">$540.000</div><span class="saving">16% ahorro</span><p>Surtido ampliado para vender más categorías con mejor margen, también a elección.</p><button class="button js-open-whatsapp" data-product="Kit Experience para revendedores">Consultar kit</button></article>
-        <article class="kit-card"><h3>Seller</h3><div class="kit-price">$790.000</div><span class="saving">20% ahorro</span><p>Volumen intermedio pensado para reposición sostenida, también a elección.</p><button class="button js-open-whatsapp" data-product="Kit Seller para revendedores">Consultar kit</button></article>
-        <article class="kit-card"><h3>Expert</h3><div class="kit-price">$1.400.000</div><span class="saving">23% ahorro</span><p>Surtido fuerte para reventa mayorista y crecimiento comercial, también a elección.</p><button class="button js-open-whatsapp" data-product="Kit Expert para revendedores">Consultar kit</button></article>
+        <article class="kit-card"><h3>Starter</h3><div class="kit-price">$390.000</div><span class="saving">12% ahorro</span><p>Base liviana con productos de alta rotación y salida rápida. También a elección.</p><button class="button js-open-whatsapp" data-product="Kit Starter para revendedores">Consultar kit</button></article>
+        <article class="kit-card"><h3>Experience</h3><div class="kit-price">$540.000</div><span class="saving">16% ahorro</span><p>Surtido ampliado para vender más categorías con mejor margen. También a elección.</p><button class="button js-open-whatsapp" data-product="Kit Experience para revendedores">Consultar kit</button></article>
+        <article class="kit-card"><h3>Seller</h3><div class="kit-price">$790.000</div><span class="saving">20% ahorro</span><p>Volumen intermedio pensado para reposición sostenida. También a elección.</p><button class="button js-open-whatsapp" data-product="Kit Seller para revendedores">Consultar kit</button></article>
+        <article class="kit-card"><h3>Expert</h3><div class="kit-price">$1.400.000</div><span class="saving">23% ahorro</span><p>Surtido fuerte para reventa mayorista y crecimiento comercial. También a elección.</p><button class="button js-open-whatsapp" data-product="Kit Expert para revendedores">Consultar kit</button></article>
       </div>
     </section>
 
@@ -256,10 +246,10 @@
         <p>Surtidos a elección para oficinas, comercios y depósitos. A mayor volumen, mejor precio final.</p>
       </div>
       <div class="page-grid">
-        <article class="kit-card"><h3>Combo Oficina</h3><div class="kit-price">$99.000</div><p>Papelería, cinta y accesorios básicos para uso administrativo diario, también a elección.</p><button class="button js-open-whatsapp" data-product="Combo Oficina">Consultar combo</button></article>
-        <article class="kit-card"><h3>Combo Comercio</h3><div class="kit-price">$199.000</div><span class="saving">5% ahorro</span><p>Insumos para atención, despacho, reposición y operación comercial, también a elección.</p><button class="button js-open-whatsapp" data-product="Combo Comercio">Consultar combo</button></article>
-        <article class="kit-card"><h3>Combo Depósito</h3><div class="kit-price">$299.000</div><span class="saving">10% ahorro</span><p>Film, cintas, cutter, precintos y guantes para trabajo operativo, también a elección.</p><button class="button js-open-whatsapp" data-product="Combo Depósito">Consultar combo</button></article>
-        <article class="kit-card"><h3>Combo Full Empresa</h3><div class="kit-price">$599.000</div><span class="saving">15% ahorro</span><p>Surtido amplio para operación comercial y reposición frecuente, también a elección.</p><button class="button js-open-whatsapp" data-product="Combo Full Empresa">Consultar combo</button></article>
+        <article class="kit-card"><h3>Combo Oficina</h3><div class="kit-price">$99.000</div><p>Papelería, cinta y accesorios básicos para uso administrativo diario. También a elección.</p><button class="button js-open-whatsapp" data-product="Combo Oficina">Consultar combo</button></article>
+        <article class="kit-card"><h3>Combo Comercio</h3><div class="kit-price">$199.000</div><span class="saving">5% ahorro</span><p>Insumos para atención, despacho, reposición y operación comercial. También a elección.</p><button class="button js-open-whatsapp" data-product="Combo Comercio">Consultar combo</button></article>
+        <article class="kit-card"><h3>Combo Depósito</h3><div class="kit-price">$299.000</div><span class="saving">10% ahorro</span><p>Film, cintas, cutter, precintos y guantes para trabajo operativo. También a elección.</p><button class="button js-open-whatsapp" data-product="Combo Depósito">Consultar combo</button></article>
+        <article class="kit-card"><h3>Combo Full Empresa</h3><div class="kit-price">$599.000</div><span class="saving">15% ahorro</span><p>Surtido amplio para operación comercial y reposición frecuente. También a elección.</p><button class="button js-open-whatsapp" data-product="Combo Full Empresa">Consultar combo</button></article>
       </div>
     </section>
 
@@ -336,7 +326,7 @@
     </div>
   </div>
 
-  <button class="floating-whatsapp js-open-whatsapp" type="button" data-product="consulta general" aria-label="Consultar por WhatsApp"><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.94 11.94 0 0012.03 0C5.41 0 .03 5.38.03 12c0 2.12.55 4.19 1.6 6.03L0 24l6.16-1.61A11.95 11.95 0 0012.03 24c6.62 0 12-5.38 12-12 0-3.2-1.24-6.21-3.51-8.52zM12.03 21.8c-1.84 0-3.64-.49-5.21-1.41l-.37-.22-3.66.96.98-3.57-.24-.37A9.74 9.74 0 1121.8 12a9.78 9.78 0 01-9.77 9.8zm5.35-7.34c-.29-.14-1.71-.84-1.98-.94-.27-.1-.46-.14-.65.14-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.43-.86-.76-1.44-1.69-1.61-1.98-.17-.29-.02-.45.12-.59.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.14-.23-.55-.47-.48-.65-.49h-.55c-.19 0-.5.07-.77.36-.27.29-1.01.99-1.01 2.41 0 1.42 1.03 2.8 1.17 2.99.14.19 2.02 3.09 4.89 4.33.68.29 1.21.46 1.63.59.69.22 1.31.19 1.81.12.55-.08 1.71-.7 1.95-1.38.24-.67.24-1.25.17-1.38-.07-.12-.26-.19-.55-.34z"/></svg></button>
+  <button class="floating-whatsapp js-open-whatsapp" type="button" data-product="consulta general" aria-label="Consultar por WhatsApp">☏</button>
   <script src="script.js"></script>
 </body>
 </html>

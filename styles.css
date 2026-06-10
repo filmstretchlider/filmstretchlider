@@ -736,192 +736,144 @@ body.theme-dark{--bg:#f4f2ef;--surface:#ffffff;--surface-2:#f1ece7;--ink:#121212
 }
 
 
-/* === AJUSTES FINOS v4 === */
+/* === AJUSTE V4: hero, gris, menú, baldosas e ícono WhatsApp === */
 
-/* Gris más oscuro, pero legible */
+/* gris más oscuro pero legible */
 body.theme-gray{
-  --bg:#c9c9c9;
+  --bg:#b9b9b9;
   --surface:#eeeeee;
-  --surface-2:#dedede;
-  --ink:#121212;
-  --muted:#4a4a4a;
+  --surface-2:#d6d6d6;
+  --ink:#111111;
+  --muted:#3f3f3f;
   --line:rgba(0,0,0,.18);
 }
 
-/* Hero: título arriba, texto más ancho y menos vacío */
+/* hero: evitar 3 renglones y espacio muerto */
+.hero{
+  grid-template-columns:minmax(480px,1.02fr) minmax(360px,.98fr)!important;
+}
+.hero-copy{
+  padding:42px 48px!important;
+}
 .hero-copy h1{
-  max-width:100%!important;
-  font-size:clamp(52px,5.2vw,84px)!important;
-  margin-bottom:14px!important;
+  max-width:680px!important;
+  font-size:clamp(54px,5.05vw,82px)!important;
+  line-height:.94!important;
 }
-
-.hero-copy .kicker{
-  margin:0 0 20px!important;
-}
-
 .hero-copy .hero-text{
-  max-width:100%!important;
-  width:100%!important;
+  max-width:760px!important;
 }
 
-/* Header con link Combos */
+/* menú */
 .main-nav{
   gap:18px!important;
   font-size:16px!important;
 }
+@media (min-width:1200px){
+  .main-nav{
+    gap:22px!important;
+    font-size:16.5px!important;
+  }
+}
 
-/* Baldosas más compactas */
+/* baldosas un poco más compactas */
 .category-card{
-  min-height:0!important;
+  min-height:auto!important;
   padding:20px!important;
   border-radius:22px!important;
 }
-
 .category-thumb{
-  height:135px!important;
+  height:145px!important;
   object-fit:contain!important;
-  background:#fff!important;
+  background:#fafafa!important;
   padding:10px!important;
 }
-
 .category-card h3{
-  margin-top:2px!important;
+  margin-top:6px!important;
   margin-bottom:8px!important;
 }
-
 .category-card p{
   font-size:15px!important;
   line-height:1.45!important;
 }
-
-.gallery-card{
-  padding:14px!important;
-}
-
-.gallery-card img{
-  height:135px!important;
-  object-fit:contain!important;
-  background:#fff!important;
-  padding:10px!important;
-}
-
-.kit-card,
-.branch-card,
-.info-card,
-.product-card-v2{
-  padding:20px!important;
-  border-radius:22px!important;
-}
-
-.kit-price{
-  font-size:30px!important;
-}
-
-/* Si alguna baldosa quedó como main-category, queda blanca igual */
 .category-card.main-category{
   background:var(--surface)!important;
   color:var(--ink)!important;
 }
-
 .category-card.main-category p{
   color:var(--muted)!important;
 }
+.category-card.main-category .category-label{
+  color:var(--orange)!important;
+}
 
-/* WhatsApp flotante más grande y reconocible */
+/* cards de destacados también apenas más compactas */
+.gallery-card{
+  padding:16px!important;
+}
+.gallery-card img{
+  height:150px!important;
+  object-fit:contain!important;
+  background:#fafafa!important;
+  padding:8px!important;
+}
+.gallery-card h3{
+  margin:6px 0!important;
+}
+.gallery-card p{
+  font-size:14.5px!important;
+  line-height:1.43!important;
+}
+
+/* kits y combos más compactos sin perder legibilidad */
+.kit-card{
+  padding:20px!important;
+}
+.kit-price{
+  font-size:30px!important;
+}
+
+/* botón flotante WhatsApp: logo real, más grande */
 .floating-whatsapp{
-  width:74px!important;
-  height:74px!important;
+  width:72px!important;
+  height:72px!important;
   font-size:0!important;
   background:#25d366!important;
-  border:4px solid #ffffff!important;
-  position:fixed!important;
 }
-
 .floating-whatsapp::before{
   content:"";
-  width:42px;
-  height:42px;
+  width:40px;
+  height:40px;
   display:block;
-  background:#fff;
-  border-radius:50%;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M19.11 17.35c-.27-.14-1.58-.78-1.82-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.14-.6-1.45-.82-1.98-.22-.53-.44-.45-.6-.46h-.51c-.18 0-.47.07-.71.34-.24.27-.94.92-.94 2.24s.96 2.6 1.09 2.78c.14.18 1.89 2.89 4.58 4.05.64.28 1.14.44 1.53.56.64.2 1.23.17 1.69.1.52-.08 1.58-.65 1.81-1.27.22-.62.22-1.16.16-1.27-.07-.11-.25-.18-.52-.31z'/%3E%3Cpath fill='%23fff' d='M16.03 3C8.85 3 3.01 8.82 3.01 15.98c0 2.29.6 4.53 1.73 6.5L3 29l6.68-1.75a13.06 13.06 0 0 0 6.35 1.62h.01c7.17 0 13.01-5.82 13.01-12.98C29.05 8.82 23.21 3 16.03 3zm0 23.68h-.01c-1.98 0-3.92-.53-5.61-1.54l-.4-.24-3.96 1.04 1.06-3.85-.26-.4a10.74 10.74 0 0 1-1.65-5.71c0-5.96 4.86-10.8 10.83-10.8 2.89 0 5.61 1.12 7.65 3.16a10.73 10.73 0 0 1 3.17 7.64c0 5.96-4.86 10.8-10.82 10.8z'/%3E%3C/svg%3E");
 }
 
-.floating-whatsapp::after{
-  content:"☎";
-  position:absolute;
-  font-size:30px;
-  line-height:1;
-  color:#25d366;
-  font-weight:900;
-  transform:rotate(-15deg);
-}
-
-.wa-glyph{
-  display:none;
-}
-
-@media(max-width:720px){
-  .main-nav{
-    font-size:12.5px!important;
-    gap:10px!important;
-  }
-
-  .hero-copy h1{
-    font-size:50px!important;
-  }
-
-  .category-thumb,
-  .gallery-card img{
-    height:155px!important;
-  }
-
-  .floating-whatsapp{
-    width:68px!important;
-    height:68px!important;
-  }
-}
-
-
-/* === Ajustes finales solicitados === */
-.main-nav a[href$="sucursales/"], .main-nav a[href="#sucursales"]{display:none!important;}
-
-.site-header{align-items:center!important;}
-.brand-logo img{height:110px!important;max-width:480px!important;}
-.main-nav{gap:18px!important;}
-.button-header{min-width:150px;text-align:center;}
-
-.hero{align-items:start!important;}
-.hero-side{justify-items:center!important;align-items:start!important;}
-.hero-visual{width:100%;max-width:620px;margin-inline:auto!important;justify-self:center!important;}
-.hero-visual img{display:block;width:100%;height:auto;}
-.hero-label{left:20px!important;bottom:18px!important;max-width:420px!important;}
-.hero-extra-textonly{grid-template-columns:1fr!important;max-width:520px!important;width:100%!important;margin:2px auto 0!important;padding:14px 18px!important;justify-self:center!important;}
-.hero-extra-textonly strong{font-size:17px!important;}
-.hero-extra-textonly p{font-size:15px!important;}
-
-.tube-compare-section{padding-top:0!important;}
-.section-title-left{text-align:left!important;max-width:900px;margin:0 auto 18px!important;}
-.tube-compare-card{max-width:980px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:14px;box-shadow:0 12px 32px rgba(0,0,0,.06);}
-.tube-compare-card img{display:block;width:100%;height:auto;border-radius:20px;}
-
-.floating-whatsapp{display:flex!important;align-items:center!important;justify-content:center!important;background:#25d366!important;color:#fff!important;border:4px solid #fff!important;box-shadow:0 14px 40px rgba(0,0,0,.25)!important;}
-.floating-whatsapp::before,.floating-whatsapp::after{content:none!important;display:none!important;}
-.floating-whatsapp .wa-icon{width:34px!important;height:34px!important;display:block!important;}
-.wa-glyph{display:none!important;}
-
+/* celulares */
 @media (max-width:1180px){
-  .brand-logo img{height:96px!important;max-width:430px!important;}
-}
-@media (max-width:900px){
-  .hero-side{width:100%!important;}
-  .hero-visual{max-width:720px!important;}
-  .hero-extra-textonly{max-width:720px!important;}
+  .hero{
+    grid-template-columns:1fr!important;
+  }
+  .hero-copy h1{
+    max-width:620px!important;
+  }
 }
 @media (max-width:720px){
-  .brand-logo img{height:82px!important;max-width:330px!important;}
-  .main-nav{gap:10px!important;}
-  .button-header{min-width:auto!important;}
-  .hero-label{max-width:300px!important;left:14px!important;bottom:14px!important;}
-  .tube-compare-card{padding:10px!important;border-radius:20px!important;}
-  .floating-whatsapp .wa-icon{width:30px!important;height:30px!important;}
+  .hero-copy h1{
+    font-size:50px!important;
+    max-width:100%!important;
+  }
+  .category-thumb,.gallery-card img{
+    height:155px!important;
+  }
+  .floating-whatsapp{
+    width:66px!important;
+    height:66px!important;
+  }
+  .floating-whatsapp::before{
+    width:37px;
+    height:37px;
+  }
 }
