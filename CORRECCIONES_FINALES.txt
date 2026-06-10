@@ -1,0 +1,18 @@
+Correcciones finales
+
+Zona Sur: Av. Hipólito Yrigoyen 8367, Lomas de Zamora
+WhatsApp: 11-2338-0983
+wa.me: 5491123380983
+
+Páginas revisadas con datos de Zona Sur:
+- cintas-adhesivas/index.html | wa:True | tel:True | dir:False
+- combos-empresas/index.html | wa:True | tel:True | dir:False
+- contadoras-billetes/index.html | wa:True | tel:True | dir:False
+- film-stretch/index.html | wa:True | tel:True | dir:False
+- impresoras-toners/index.html | wa:True | tel:True | dir:False
+- index.html | wa:True | tel:True | dir:True
+- kits-revendedores/index.html | wa:True | tel:True | dir:False
+- papeleria-comercial/index.html | wa:True | tel:True | dir:False
+- sucursales/index.html | wa:True | tel:True | dir:True
+
+CSS: burbuja WhatsApp e imagen comparativa agrandadas.

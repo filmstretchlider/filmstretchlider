@@ -1,0 +1,11 @@
+Optimización de imágenes
+
+hero-collage.png → hero-collage.webp: 155 KB
+stock-film-stretch.png → stock-film-stretch.webp: 100 KB
+film-stretch-tubos.png → film-stretch-tubos.webp: 47 KB
+rollos-dos-premium.png → rollos-dos-premium.webp: 47 KB
+resma-punax-a4-75g.png → resma-punax-a4-75g.webp: 11 KB
+toners-genericos.png → toners-genericos.webp: 5 KB
+
+Se mantuvo el diseño. CSS controla el tamaño visual.
+Se agregó loading="lazy" a imágenes fuera del hero.

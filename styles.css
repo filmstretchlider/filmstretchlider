@@ -925,3 +925,47 @@ body.theme-gray{
     border-radius: 20px;
   }
 }
+
+
+/* === AJUSTE FINAL V3: WHATSAPP + COMPARATIVA MÁS GRANDE === */
+.floating-whatsapp{
+  width:86px!important;
+  height:86px!important;
+}
+
+.floating-whatsapp::before{
+  width:64px!important;
+  height:64px!important;
+}
+
+.tube-comparison-home{
+  max-width: 1540px!important;
+  margin: 30px auto 32px!important;
+  padding: 0 clamp(8px, 2vw, 24px)!important;
+}
+
+.tube-comparison-home img{
+  width: 100%!important;
+  border-radius: 30px!important;
+}
+
+@media (max-width:720px){
+  .floating-whatsapp{
+    width:78px!important;
+    height:78px!important;
+  }
+
+  .floating-whatsapp::before{
+    width:58px!important;
+    height:58px!important;
+  }
+
+  .tube-comparison-home{
+    margin: 22px auto 26px!important;
+    padding: 0 8px!important;
+  }
+
+  .tube-comparison-home img{
+    border-radius: 20px!important;
+  }
+}

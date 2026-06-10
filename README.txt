@@ -14,3 +14,10 @@ Incluye:
 Pendiente:
 - WhatsApp final de Zona Sur.
 - Confirmar productos exactos de kits y combos.
+
+
+Ajuste final:
+- WhatsApp flotante con ícono interno más grande.
+- Zona Sur / Lomas de Zamora actualizada:
+  Dirección: Av. Hipólito Yrigoyen 8367, Lomas de Zamora
+  WhatsApp: 11-2338-0983
