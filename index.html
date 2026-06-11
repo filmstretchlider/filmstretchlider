@@ -11,10 +11,54 @@
 <meta content="Film Stretch Líder | Insumos para negocios y empresas" property="og:title"/>
 <meta content="Film stretch, cintas, papelería, rollos térmicos, etiquetas, impresoras, tóners, contadoras de billetes y sillas gamer para comercios, oficinas, depósitos y distribuidoras." property="og:description"/>
 <meta content="website" property="og:type"/>
+<meta content="https://www.filmstretchlider.com.ar/" property="og:url"/>
+<meta content="#ff5a00" name="theme-color"/>
 <meta content="es_AR" property="og:locale"/>
 <link href="https://www.filmstretchlider.com.ar/" rel="canonical"/>
 <link href="assets/favicon.png" rel="icon" type="image/png"/>
 <link href="styles.css" rel="stylesheet"/>
+
+<style>
+/* Corrección final: centrado real, navegación sin tirarse a la derecha y grillas parejas. */
+html{scroll-behavior:smooth;}
+body{overflow-x:hidden;}
+.site-header{box-sizing:border-box;width:100%;display:grid!important;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:24px;padding:16px clamp(18px,4vw,64px)!important;}
+.brand-logo{display:flex;align-items:center;min-width:max-content;}
+.brand-logo img{display:block;max-width:160px;height:auto;}
+.main-nav{display:flex!important;flex-wrap:wrap;justify-content:center!important;align-items:center;gap:8px 18px;max-width:760px;margin-left:auto;text-align:center;}
+.main-nav a{white-space:nowrap;line-height:1.25;}
+.hero,.comparison,.section,.kits-combos-block{box-sizing:border-box;width:min(100% - 32px,1120px);margin-left:auto!important;margin-right:auto!important;}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,1.15fr);align-items:stretch;gap:24px;}
+.hero-copy,.hero-visual,.comparison,.info-card,.kits-combos-block{box-sizing:border-box;}
+.hero-visual img{width:100%;height:100%;object-fit:cover;}
+.section-title{width:100%;text-align:left;}
+.grid{display:grid!important;justify-content:center!important;justify-items:stretch!important;gap:16px;}
+.grid.four{grid-template-columns:repeat(4,minmax(0,1fr));}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr));}
+.grid.two-by-two{grid-template-columns:repeat(2,minmax(0,1fr));}
+.info-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.split-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start;}
+.product-card,.pack-card,.branch-card,.info-card{min-width:0;}
+.product-card img,.pack-cover{width:100%;object-fit:contain;}
+.floating-whatsapp{display:flex!important;align-items:center;justify-content:center;font-weight:800;letter-spacing:-.03em;}
+@media (max-width:980px){
+  .site-header{grid-template-columns:1fr;justify-items:center;gap:12px;}
+  .main-nav{margin-left:0;max-width:100%;justify-content:center!important;}
+  .hero{grid-template-columns:1fr;}
+  .grid.four{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .grid.three{grid-template-columns:1fr;}
+  .split-sections{grid-template-columns:1fr;}
+}
+@media (max-width:620px){
+  .hero,.comparison,.section,.kits-combos-block{width:min(100% - 20px,1120px);}
+  .main-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+  .main-nav a{white-space:normal;}
+  .grid.four,.grid.two-by-two,.info-pair{grid-template-columns:1fr;}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:10px;}
+  .proof-row{display:grid!important;grid-template-columns:1fr;}
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
@@ -22,15 +66,15 @@
 <img alt="Film Stretch Líder" src="assets/logo-filmstretchlider.png"/>
 </a>
 <nav aria-label="Navegación principal" class="main-nav">
-<a href="film-stretch/">Film Stretch</a>
-<a href="cintas-adhesivas/">Cintas adhesivas</a>
-<a href="papeleria-comercial/">Papelería</a>
-<a href="impresoras-toners/">Impresoras</a>
-<a href="contadoras-billetes/">Contadoras de billetes</a>
-<a href="sillas-gamer/">Sillas gamer</a>
-<a href="kits-revendedores/">¿Querés revender?</a>
-<a href="combos-empresas/">Combos</a>
-<a href="sucursales/">Sucursales</a>
+<a href="#film-stretch">Film Stretch</a>
+<a href="#productos">Cintas adhesivas</a>
+<a href="#productos">Papelería</a>
+<a href="#impresion">Impresoras</a>
+<a href="#productos">Contadoras de billetes</a>
+<a href="#productos">Sillas gamer</a>
+<a href="#kits-revendedores">¿Querés revender?</a>
+<a href="#combos-empresas">Combos</a>
+<a href="#sucursales">Sucursales</a>
 </nav>
 </header>
 <main>
@@ -40,7 +84,7 @@
 <h1>Insumos para negocios</h1>
 <p class="hero-text">Film stretch, film estirable, cinta de embalar, resmas, rollos térmicos, etiquetas, impresoras y tóners para comercios, oficinas, depósitos, supermercados y distribuidoras.</p>
 <div class="hero-actions">
-<button class="button js-open-whatsapp" data-product="cotización general">Pedir cotización por WhatsApp</button>
+<button type="button" class="button js-open-whatsapp" data-product="cotización general">Pedir cotización por WhatsApp</button>
 <a class="button button-dark" href="#productos">Ver productos</a>
 </div>
 <div aria-label="Argumentos comerciales" class="proof-row"><span>Calidad premium</span><span>Medidas reales</span><span>Micrones reales</span><span>Stretch de excelente calidad</span><span class="proof-note">Se puede fabricar el stretch según gramaje, peso, medida, color y necesidad del cliente.</span><span>Cinta adhesiva que pega en serio</span></div><div class="trust-icons"><div class="trust-item"><img alt="Productos de calidad" loading="lazy" src="assets/icon-cocarda-check.webp"/><span>Productos de calidad</span></div><div class="trust-item"><img alt="Clientes satisfechos" loading="lazy" src="assets/icon-pulgar-arriba.webp"/><span>Clientes satisfechos</span></div><div class="trust-item"><img alt="Más de 10 años de experiencia" loading="lazy" src="assets/icon-estrella.webp"/><span>Más de 10 años de experiencia</span></div><div class="trust-item"><img alt="Compra segura y garantizada" loading="lazy" src="assets/icon-escudo-check.webp"/><span>Compra segura y garantizada</span></div></div>
@@ -50,7 +94,7 @@
 <div class="hero-label"><strong>Film stretch transparente y negro</strong><span>Producto principal de rotación</span></div>
 </div>
 </section>
-<section aria-label="Comparativa de tubos de film stretch" class="comparison">
+<section aria-label="Comparativa de tubos de film stretch" class="comparison" id="film-stretch">
 <div class="comparison-head">
 <p class="kicker">Comparativa real</p>
 <h2>Stretch a medida <span>según la necesidad del cliente</span></h2>
@@ -81,25 +125,25 @@
 <img alt="Film Stretch" loading="lazy" src="assets/film-stretch-3rollos.jpg"/>
 <h3>Film Stretch</h3>
 <p>Film stretch y estirable en rollos de distintas medidas. Alto rendimiento para embalaje y paletizado.</p>
-<button class="mini-button js-open-whatsapp" data-product="film stretch">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="film stretch">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Cintas adhesivas" loading="lazy" src="assets/cinta-embalar.jpg"/>
 <h3>Cintas adhesivas</h3>
 <p>Cinta adhesiva transparente y marrón. Alta adhesión para cajas, despacho y depósito.</p>
-<button class="mini-button js-open-whatsapp" data-product="cintas adhesivas">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="cintas adhesivas">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Rollos térmicos" loading="lazy" src="assets/rollos-termicos.jpg"/>
 <h3>Rollos térmicos</h3>
 <p>Rollos impresos para tickets, balanzas y puntos de venta. Distintos anchos y largos.</p>
-<button class="mini-button js-open-whatsapp" data-product="rollos térmicos">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="rollos térmicos">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Resmas / Papelería" loading="lazy" src="assets/autor-a4-75g.jpg"/>
 <h3>Resmas / Papelería</h3>
 <p>Resmas A4 y oficio. Papelería para oficinas, comercios y administración diaria.</p>
-<button class="mini-button js-open-whatsapp" data-product="papelería comercial">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="papelería comercial">Consultar</button>
 </article>
 </div>
 </section>
@@ -110,25 +154,25 @@
 <img alt="Etiquetas" loading="lazy" src="assets/etiquetas-rollo-trio.jpg"/>
 <h3>Etiquetas</h3>
 <p>Etiquetas autoadhesivas para impresión térmica, logística y rotulado.</p>
-<button class="mini-button js-open-whatsapp" data-product="etiquetas autoadhesivas">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="etiquetas autoadhesivas">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Tóners para impresoras" loading="lazy" src="assets/toners-cajas.jpg"/>
 <h3>Tóners</h3>
 <p>Tóners originales y compatibles. Consultá por marca y modelo exacto.</p>
-<button class="mini-button js-open-whatsapp" data-product="tóners">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="tóners">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Contadora de billetes profesional" loading="lazy" src="assets/contadora-billetes.jpg"/>
 <h3>Contadoras de billetes</h3>
 <p>Contadoras y detectoras para comercios, oficinas y manejo de efectivo.</p>
-<button class="mini-button js-open-whatsapp" data-product="contadoras de billetes">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="contadoras de billetes">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Sillas gamer" loading="lazy" src="assets/sillas-gamer.jpg"/>
 <h3>Sillas gamer</h3>
 <p>Sillas de oficina y gamer para jornadas largas. Consultar modelos y stock.</p>
-<button class="mini-button js-open-whatsapp" data-product="sillas gamer">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="sillas gamer">Consultar</button>
 </article>
 </div>
 </section>
@@ -139,31 +183,31 @@
 <img alt="Film stretch negro" loading="lazy" src="assets/film-stretch-negro.jpg"/>
 <h3>Film stretch negro</h3>
 <p>Protección y ocultamiento de mercadería para logística y despacho.</p>
-<button class="mini-button js-open-whatsapp" data-product="film stretch negro">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="film stretch negro">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Rollos térmicos x5" loading="lazy" src="assets/rollos-termicos-x5.jpg"/>
 <h3>Rollos térmicos x5</h3>
 <p>Pack de rollos para reposición comercial y puntos de venta.</p>
-<button class="mini-button js-open-whatsapp" data-product="rollos térmicos x5">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="rollos térmicos x5">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Resmas A4 75g" loading="lazy" src="assets/autor-a4-80g-box.jpg"/>
 <h3>Resmas A4 75g</h3>
 <p>Papel A4 para oficinas, comercios y administración.</p>
-<button class="mini-button js-open-whatsapp" data-product="resmas A4">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="resmas A4">Consultar</button>
 </article>
 <article class="product-card">
 <img alt="Xerox 3020 WiFi" loading="lazy" src="assets/xerox-3020-wifi.jpg"/>
 <h3>Xerox 3020 WiFi</h3>
 <p>Impresora láser monocromática compacta con conexión inalámbrica.</p>
-<button class="mini-button js-open-whatsapp" data-product="Xerox 3020 WiFi">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="Xerox 3020 WiFi">Consultar</button>
 </article>
 </div>
 </section>
 <section class="section info-pair">
-<article class="info-card"><p class="kicker">Embalaje</p><h2>Cinta de embalar</h2><p>Cinta adhesiva transparente y marrón para cajas, depósitos y despacho. Alta adhesión real: cinta que pega en serio.</p><button class="mini-button js-open-whatsapp" data-product="cinta de embalar">Consultar</button></article>
-<article class="info-card"><p class="kicker">Papelería</p><h2>Resmas, rollos, etiquetas y papeles especiales</h2><p>Reposición para comercios, oficinas y administración diaria: resmas, rollos térmicos, etiquetas y papeles especiales.</p><button class="mini-button js-open-whatsapp" data-product="papelería comercial">Consultar</button></article>
+<article class="info-card"><p class="kicker">Embalaje</p><h2>Cinta de embalar</h2><p>Cinta adhesiva transparente y marrón para cajas, depósitos y despacho. Alta adhesión real: cinta que pega en serio.</p><button type="button" class="mini-button js-open-whatsapp" data-product="cinta de embalar">Consultar</button></article>
+<article class="info-card"><p class="kicker">Papelería</p><h2>Resmas, rollos, etiquetas y papeles especiales</h2><p>Reposición para comercios, oficinas y administración diaria: resmas, rollos térmicos, etiquetas y papeles especiales.</p><button type="button" class="mini-button js-open-whatsapp" data-product="papelería comercial">Consultar</button></article>
 </section>
 <section class="section" id="impresion">
 <div class="section-title"><p class="kicker">Impresoras</p><h2>Impresoras disponibles</h2><p>Una fila de cuatro modelos principales. Consultar stock actualizado.</p></div>
@@ -172,25 +216,25 @@
 <img alt="Xerox 3020 WiFi" loading="lazy" src="assets/xerox-3020-wifi.jpg"/>
 <h3>Xerox 3020 WiFi</h3>
 <p>Láser monocromática compacta con WiFi y USB.</p>
-<button class="mini-button js-open-whatsapp" data-product="Xerox 3020 WiFi">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="Xerox 3020 WiFi">Consultar</button>
 </article>
 <article class="product-card printer-card">
 <img alt="Pantum P2500W" loading="lazy" src="assets/pantum-p2500w.jpg"/>
 <h3>Pantum P2500W</h3>
 <p>Impresora láser monocromática para oficina y comercio.</p>
-<button class="mini-button js-open-whatsapp" data-product="Pantum P2500W">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="Pantum P2500W">Consultar</button>
 </article>
 <article class="product-card printer-card">
 <img alt="Brother HL-1200" loading="lazy" src="assets/brother-hl1200.jpg"/>
 <h3>Brother HL-1200</h3>
 <p>Láser compacta, simple y confiable.</p>
-<button class="mini-button js-open-whatsapp" data-product="Brother HL-1200">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="Brother HL-1200">Consultar</button>
 </article>
 <article class="product-card printer-card">
 <img alt="Brother HL-1212W" loading="lazy" src="assets/brother-hl1212w.jpg"/>
 <h3>Brother HL-1212W</h3>
 <p>Láser monocromática con conexión inalámbrica.</p>
-<button class="mini-button js-open-whatsapp" data-product="Brother HL-1212W">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="Brother HL-1212W">Consultar</button>
 </article>
 </div>
 </section>
@@ -205,7 +249,7 @@
 <div class="price">$390.000</div>
 <strong class="saving">12% ahorro</strong>
 <p>Base liviana con productos de alta rotación. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Starter">Consultar kit</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Starter">Consultar kit</button>
 </article>
 <article class="pack-card">
 <img alt="Experience" class="pack-cover" loading="lazy" src="assets/kit-experience-final.webp"/>
@@ -214,7 +258,7 @@
 <div class="price">$540.000</div>
 <strong class="saving">16% ahorro</strong>
 <p>Surtido ampliado para vender más categorías. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Experience">Consultar kit</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Experience">Consultar kit</button>
 </article>
 <article class="pack-card">
 <img alt="Seller" class="pack-cover" loading="lazy" src="assets/kit-seller-final.webp"/>
@@ -223,7 +267,7 @@
 <div class="price">$790.000</div>
 <strong class="saving">20% ahorro</strong>
 <p>Volumen intermedio pensado para reposición sostenida. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Seller">Consultar kit</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Seller">Consultar kit</button>
 </article>
 <article class="pack-card">
 <img alt="Expert" class="pack-cover" loading="lazy" src="assets/kit-expert-final.webp"/>
@@ -232,7 +276,7 @@
 <div class="price">$1.400.000</div>
 <strong class="saving">23% ahorro</strong>
 <p>Surtido fuerte para reventa mayorista y crecimiento comercial. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Expert">Consultar kit</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Expert">Consultar kit</button>
 </article>
 </div>
 </div>
@@ -245,7 +289,7 @@
 <h3>Combo Oficina</h3>
 <div class="price">$149.999</div>
 <p>Papelería, cinta y accesorios básicos para uso administrativo diario. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Combo Oficina">Consultar combo</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Combo Oficina">Consultar combo</button>
 </article>
 <article class="pack-card">
 <img alt="Combo Comercio" class="pack-cover" loading="lazy" src="assets/combo-comercio-final.webp"/>
@@ -254,7 +298,7 @@
 <div class="price">$199.000</div>
 <strong class="saving">5% ahorro</strong>
 <p>Insumos para atención, despacho, reposición y operación comercial. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Combo Comercio">Consultar combo</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Combo Comercio">Consultar combo</button>
 </article>
 <article class="pack-card">
 <img alt="Combo Depósito" class="pack-cover" loading="lazy" src="assets/combo-deposito-final.webp"/>
@@ -263,7 +307,7 @@
 <div class="price">$299.000</div>
 <strong class="saving">10% ahorro</strong>
 <p>Film, cintas, etiquetas y accesorios para trabajo operativo. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Combo Depósito">Consultar combo</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Combo Depósito">Consultar combo</button>
 </article>
 <article class="pack-card">
 <img alt="Combo Full Empresa" class="pack-cover" loading="lazy" src="assets/combo-full-empresa-final.webp"/>
@@ -272,7 +316,7 @@
 <div class="price">$599.000</div>
 <strong class="saving">15% ahorro</strong>
 <p>Surtido amplio para operación comercial y reposición frecuente. También a elección.</p>
-<button class="button pack-button js-open-whatsapp" data-product="Combo Full Empresa">Consultar combo</button>
+<button type="button" class="button pack-button js-open-whatsapp" data-product="Combo Full Empresa">Consultar combo</button>
 </article>
 </div>
 </div>
@@ -287,7 +331,7 @@
 <p><strong>Retiro fuera de horario con previo aviso: de 7 a 24 hs</strong></p>
 <p><strong>WhatsApp:</strong> 11-5953-1743</p>
 <p><strong>Mail:</strong> ventas.liniers@filmstretchlider.com.ar</p>
-<button class="mini-button js-open-whatsapp" data-product="consulta para Liniers">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="consulta para Liniers">Consultar</button>
 </article>
 <article class="branch-card">
 <h3>Zona Sur</h3>
@@ -295,7 +339,7 @@
 <p><strong>Horario:</strong> 10 a 18 hs</p>
 <p><strong>WhatsApp:</strong> 11-2338-0983</p>
 <p><strong>Mail:</strong> ventas.zamora@filmstretchlider.com.ar</p>
-<button class="mini-button js-open-whatsapp" data-product="consulta para Zona Sur">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="consulta para Zona Sur">Consultar</button>
 </article>
 <article class="branch-card">
 <h3>Zona Norte</h3>
@@ -303,7 +347,7 @@
 <p><strong>Horario:</strong> 10 a 18 hs</p>
 <p><strong>WhatsApp:</strong> 11-4193-4557</p>
 <p><strong>Mail:</strong> ventas.sanisidro@filmstretchlider.com.ar</p>
-<button class="mini-button js-open-whatsapp" data-product="consulta para Zona Norte">Consultar</button>
+<button type="button" class="mini-button js-open-whatsapp" data-product="consulta para Zona Norte">Consultar</button>
 </article>
 </div>
 </section>
@@ -311,12 +355,12 @@
 <footer class="site-footer">
 <div>
 <h3>Rubros</h3>
-<a href="film-stretch/">Film stretch por mayor</a>
-<a href="cintas-adhesivas/">Cintas adhesivas</a>
-<a href="papeleria-comercial/">Papelería comercial</a>
-<a href="impresoras-toners/">Impresoras y tóners</a>
-<a href="contadoras-billetes/">Contadoras de billetes</a>
-<a href="sillas-gamer/">Sillas gamer</a>
+<a href="#film-stretch">Film stretch por mayor</a>
+<a href="#productos">Cintas adhesivas</a>
+<a href="#productos">Papelería comercial</a>
+<a href="#impresion">Impresoras y tóners</a>
+<a href="#productos">Contadoras de billetes</a>
+<a href="#productos">Sillas gamer</a>
 </div>
 <div>
 <h3>Productos</h3>
@@ -329,9 +373,9 @@
 </div>
 <div>
 <h3>Sucursales</h3>
-<a href="sucursales/">Liniers – CABA</a>
-<a href="sucursales/">Zona Sur – Lomas de Zamora</a>
-<a href="sucursales/">Zona Norte – San Isidro</a>
+<a href="#sucursales">Liniers – CABA</a>
+<a href="#sucursales">Zona Sur – Lomas de Zamora</a>
+<a href="#sucursales">Zona Norte – San Isidro</a>
 <span>Atención mayorista</span>
 </div>
 <div>
@@ -355,7 +399,7 @@
 </div>
 </div>
 </div>
-<button aria-label="Consultar por WhatsApp" class="floating-whatsapp js-open-whatsapp" data-product="consulta general" type="button">☘</button>
+<button aria-label="Consultar por WhatsApp" class="floating-whatsapp js-open-whatsapp" data-product="consulta general" type="button">WA</button>
 <script src="script.js"></script>
 </body>
 </html>
