@@ -453,3 +453,49 @@ a{color:inherit;text-decoration:none} img{display:block;max-width:100%} button{f
     white-space:normal;
   }
 }
+
+
+/* PATCH FINAL 5 — header con letra más grande de verdad */
+@media(min-width:1181px){
+  .site-header{
+    grid-template-columns:330px 1fr;
+    min-height:142px;
+  }
+  .brand-logo img{
+    height:128px;
+    max-width:390px;
+  }
+  .main-nav{
+    font-size:21px;
+    line-height:1.08;
+    gap:12px 24px;
+    font-weight:950;
+  }
+}
+
+
+/* PATCH FINAL 6 — header 22px y menú centrado fino */
+@media(min-width:1181px){
+  .site-header{
+    grid-template-columns:340px 1fr;
+    min-height:146px;
+  }
+  .brand-logo img{
+    height:130px;
+    max-width:400px;
+  }
+  .main-nav{
+    font-size:22px;
+    line-height:1.05;
+    gap:10px 26px;
+    align-items:center;
+  }
+  .main-nav a{
+    min-height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    white-space:normal;
+  }
+}
