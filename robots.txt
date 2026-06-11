@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://filmstretchlider.com.ar/sitemap.xml
+Sitemap: https://www.filmstretchlider.com.ar/sitemap.xml

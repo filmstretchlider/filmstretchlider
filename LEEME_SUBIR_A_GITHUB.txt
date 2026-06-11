@@ -1,0 +1,1 @@
+Subir TODO el contenido de esta carpeta al repo filmstretchlider/filmstretchlider. No subir la carpeta contenedora, sino su contenido: index.html, styles.css, script.js, assets/, carpetas internas, CNAME, robots.txt y sitemap.xml.

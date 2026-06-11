@@ -1,0 +1,1 @@
+Paquete reconstruido usando assets reales del ZIP filmstretchlider_web_FINAL_TUBOS_ZAMORA_OK y logo final elegido. Se reemplazó la comparativa incrustada por sección HTML con fotos recortadas de tubos originales.
