@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.filmstretchlider.com.ar/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/film-stretch/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/cintas-adhesivas/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/papeleria-comercial/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/impresoras-toners/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/contadoras-billetes/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/sillas-gamer/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/kits-revendedores/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/combos-empresas/</loc></url>
-  <url><loc>https://www.filmstretchlider.com.ar/sucursales/</loc></url>
+  <url>
+    <loc>https://www.filmstretchlider.com.ar/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
